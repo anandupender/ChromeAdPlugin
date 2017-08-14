@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "ME.Ai",
+  "version": "0.1",
+  "web_accessible_resources": [
+  		"main.css",
+  		"popup.js",
+  		"test.js",
+  		"contentscript.js"
+   ],
+   "browser_action": {
+   	"default_title": "Make this page red",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab",
+    "<all_urls>"
+   ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*", "https://www.nytimes.com/"],
+      "css": ["main.css"],
+      "js": [ "popup.js", "firebase.js"]     
+  	}
+  ]
+}

@@ -1,0 +1,21 @@
+body .test{
+/*	font-family: helvetica;
+*/    font-family: 'Comfortaa', cursive;
+
+}
+
+
+.main{
+	width:200px;
+}
+
+button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
