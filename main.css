@@ -1,12 +1,29 @@
-body .test{
+#test{
 /*	font-family: helvetica;
 */    font-family: 'Comfortaa', cursive;
 
 }
 
-
+.backgroundDiv {
+	
+	position: absolute;
+	width:200px;
+	height: 200px;
+	background-image: url("http://www.ideocolab.com/style/css/img/shapes.gif"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.7;
+}
 .main{
 	width:200px;
+	background-image: url("http://www.ideocolab.com/style/css/img/shapes.gif"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.7;
 }
 
 button {
@@ -18,4 +35,19 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
 }
+button:hover {
+   box-shadow: 0 22px 43px rgba(0,0,0,0.95);
+	-webkit-box-shadow: 0 22px 43px rgba(0,0,0,0.15);
+	-webkit-transform: translateY(-4px);
+	transform: translateY(-4px);
+	-moz-transform: none;
+}
+body {
+	
+}
+

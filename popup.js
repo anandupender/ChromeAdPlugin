@@ -8,13 +8,46 @@ console.log("here popup")
 //CHANGE AD ON NYTIMES.COM
 
 var replacementAd = `
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <style>
-        h1{font-family:helvetica; font-size:24px;}
-        .container {border: 3px solid #FF7D75; display: inline-flex; width:100%; height: 210px; background-color:#EEEEEE; padding:10px; font-family:helvetica;}
-        .product{text-align:center; margin: auto 5px; width:25%; background-color: #FFFFFF; display:inline-block;margin:20px;padding:10px;}
-        img{height:100px;}
+        h1 {
+            font-family:helvetica; 
+            font-size:24px;
+            opacity: 0.3;
+        }
+        .container {
+            border: 2px solid #FF7D75; 
+            display: inline-flex; 
+            width:100%; 
+            height: 210px; 
+            background-color:#EEEEEE; 
+            padding:10px; 
+            font-family:helvetica;
+        }
+        .product { 
+            text-align:center; 
+            margin: auto 5px 10px; 
+            width:25%; 
+            background-color: #FFFFFF; 
+            display:inline-block;
+            margin:20px;
+            padding:10px;
+            box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+            transition: 0.3s ease-in-out;
+        }
+        .product:hover { 
+            box-shadow: 0 22px 43px rgba(0,0,0,0.95);
+            -webkit-box-shadow: 0 22px 43px rgba(0,0,0,0.15);
+            -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+            -moz-transform: none;
+        }
+        img {
+            height:100px;
+        }
         button {
+            border-radius: 5px;
             border: none;
             color: white;
             padding: 10px;
@@ -23,15 +56,36 @@ var replacementAd = `
             display: inline-block;
             font-size: 14px;
         }
+            button:hover {
+            
+        }
         #p1Pos, #p2Pos, #p3Pos{
-            background-color: #00F38C;
+            font-family: 'Lobster', cursive;
+            transform: translateY(-10px);
+            background-color: #2FDAB8;
+            transition: 0.3s ease-in-out;
+        }
+        #p1Pos:hover, #p2Pos:hover, #p3Pos:hover{
+            font-family: 'Lobster', cursive;
+            transform: translateY(-10px);
+            background-color: white;
+            color: #2FDAB8;
         }
         #p1Neg, #p2Neg, #P3Neg{
+            font-family: 'Lobster', cursive;
+            transform: translateY(-10px);
             background-color: #FF7D75;
+            transition: 0.3s ease-in-out;
+        }
+        #p1Neg:hover, #p2Neg:hover, #P3Neg:hover{
+            font-family: 'Lobster', cursive;
+            transform: translateY(-10px);
+            background-color: white;
+            color: #FF7D75;
         }
     </style>
     <div class = 'container'>
-        <h1>ME.AI</h1>
+        <h1 id="adTitle"><b>[me.ai]</b></h1>
         <div class = "product">
             <img id="product1" alt="Sorry, that's all the products for now" src = 'https://firebasestorage.googleapis.com/v0/b/meai-midpoint.appspot.com/o/laptop%20-%20mac.jpg?alt=media&token=1bea4c7e-47e8-4ff6-8f22-5050268bf082'>
             <br><br>
