@@ -107,8 +107,8 @@ var replacementAd = `
     </div>
 `;
 
-//yahoo, yahoo, sfgate, sfgate
-var siteIDs = ['sb_rel_my-adsMAST-iframe','Billboard-ad', 'google_ads_iframe_/36117602/hnp-sfgate.com/Homepage_1__container__', 'google_ads_iframe_/36117602/hnp-sfgate.com/Sports_1__container__']
+//yahoo, yahoo, sfgate, sfgate, amazon, 
+var siteIDs = ['sb_rel_my-adsMAST-iframe','Billboard-ad', 'google_ads_iframe_/36117602/hnp-sfgate.com/Homepage_1__container__', 'google_ads_iframe_/36117602/hnp-sfgate.com/Sports_1__container__','gw-desktop-herotator', 'container', 'google_ads_iframe_/29390238/NYT/homepage/us_0__container__']
 
 for(var i = 0; i < siteIDs.length; i++){
     if(document.getElementById(siteIDs[i]) !== null){
