@@ -1,12 +1,3 @@
-//CHANGE IMAGE ON GOOGLE.COM TO IDEO COLAB LOGO
-
-console.log("here popup")
-// document.getElementById('hplogo').srcset = "https://cdn-images-1.medium.com/max/1200/1*ntg3PiBCKUAS49GOQITMhA.jpeg";
-// document.getElementById('hplogo').style.height = "230px";
-// document.getElementById('hplogo').style.padding = "25";
-
-//CHANGE AD ON NYTIMES.COM
-
 var replacementAd = `
       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
@@ -115,9 +106,6 @@ for(var i = 0; i < siteIDs.length; i++){
         document.getElementById(siteIDs[i]).innerHTML = replacementAd; //Yahoo
     }
 }
-// document.getElementById('sb_rel_my-adsMAST-iframe').innerHTML = replacementAd; //Yahoo
-// document.getElementById('google_ads_iframe_/36117602/hnp-sfgate.com/Homepage_1__container__').innerHTML = replacementAd;  //sfgate.com
-// document.getElementById('google_ads_iframe_/36117602/hnp-sfgate.com/Homepage_1').innerHTML = replacementAd;  //sfgate.com
 
 //ADD ALL EVENT LISTENERS FOR 6 BUTTONS 
 
@@ -180,6 +168,9 @@ var images = ['https://firebasestorage.googleapis.com/v0/b/meai-midpoint.appspot
 'https://firebasestorage.googleapis.com/v0/b/meai-midpoint.appspot.com/o/speaker%20-%20cheap.jpg?alt=media&token=c4024228-bf8d-4ac0-9015-d876ae80bdc5'
 ]
 imageCounter = 0;
+
+
+//ADD ALL EVENT LISTENERS FOR 6 BUTTONS 
 
 var temp = document.getElementById('p1Pos');
 temp.addEventListener('click', function() {
