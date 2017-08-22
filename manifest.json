@@ -16,15 +16,11 @@
    "activeTab",
     "<all_urls>"
    ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "content_scripts": [
     {
       "matches": ["http://www.google.com/*", "https://www.nytimes.com/"],
       "css": ["main.css"],
-      "js": [ "popup.js", "firebase.js"]     
+      "js": [ "popup.js"]     
   	}
   ]
 }

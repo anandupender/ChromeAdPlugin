@@ -10,11 +10,12 @@ var replacementAd = `
         .container {
             border: 2px solid #FF7D75; 
             display: inline-flex; 
-            width:100%; 
+            width:85%; 
             height: 210px; 
-            background-color:#EEEEEE; 
+            background-color:#EFEFEF; 
             padding:10px; 
             font-family:helvetica;
+            margin:20px;
         }
         .product { 
             text-align:center; 
@@ -74,6 +75,18 @@ var replacementAd = `
             background-color: white;
             color: #FF7D75;
         }
+        #adReason{
+            position:absolute;
+            bottom:15px;
+            right:150px;
+            padding:10px;
+        }
+        h3{
+            color:#A8A8A8;
+        }
+        a, a:link, a:visited{
+            color: #FF7D75;
+        }
     </style>
     <div class = 'container'>
         <h1 id="adTitle"><b>[me.ai]</b></h1>
@@ -94,6 +107,11 @@ var replacementAd = `
             <br><br>
             <button id="p3Pos"> OOH! </button>
             <button id="P3Neg"> EEW! </button>
+        </div>
+        <div id="adReason">
+            <h3>
+                Head to <a href="meai.co"> your shop </a> to see your new recommendations
+            </h3>
         </div>
     </div>
 `;
