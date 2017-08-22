@@ -5,7 +5,7 @@ var replacementAd = `
         h1 {
             font-family:helvetica; 
             font-size:24px;
-            opacity: 0.3;
+            opacity: 0.2;
         }
         .container {
             border: 2px solid #FF7D75; 
@@ -47,9 +47,12 @@ var replacementAd = `
             text-align: center;
             display: inline-block;
             font-size: 14px;
+            box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+
         }
-            button:hover {
-            
+        button:hover {
+            box-shadow: 0 22px 43px rgba(0,0,0,0.95);
+            -webkit-box-shadow: 0 22px 43px rgba(0,0,0,0.15);            
         }
         #p1Pos, #p2Pos, #p3Pos{
             font-family: 'Lobster', cursive;
@@ -86,6 +89,15 @@ var replacementAd = `
         }
         a, a:link, a:visited{
             color: #FF7D75;
+        #p1Pos:active, #p2Pos:active, #p3Pos:active {
+            transition: 0.1s ease-in-out;
+            background-color: #2FDAB8;
+            color: white;
+        }
+        #p1Neg:active, #p2Neg:active, #P3Neg:active {
+            transition: 0.1s ease-in-out;
+            background-color: #FF7D75;
+            color: white;
         }
     </style>
     <div class = 'container'>
