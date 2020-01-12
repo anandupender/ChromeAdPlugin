@@ -1,6 +1,6 @@
 # ChromeAdPlugin
 
-A simple Chrome Extension prototype that respresents a single concept.
+A simple Chrome Extension prototype that represents a single concept.
 
 ### Current Model
 
@@ -8,7 +8,7 @@ Our data gets collected by large companies, sold to advertisors, and used to for
 
 ### Future Vision
 
-What if that space on the browser could be replaced by a colleciton of recommendations from an (AI) system that you "own." Think of it as a recommender engine that you actually want because you can control the types of products you're looking for and give instant feedback as to whether they are goood recommendations or not.
+What if that space on the browser could be replaced by a collection of recommendations from an (AI) system that you "own." Think of it as a recommender engine that you actually want because you can control the types of products you're looking for and give instant feedback as to whether they are goood recommendations or not.
 
 ## Setup
 
@@ -16,11 +16,11 @@ Download Zip
 
 Unzip File
 
-Open Chrome Extension Manager under 'Window'
+Open Chrome Extension Manager under `Window`
 
-Click 'Load Unpacked Extension'
+Click `Load Unpacked Extension`
 
-Choose the unzipepd folder.
+Choose the unzipped folder.
 
 ## Use 
 
@@ -31,4 +31,4 @@ Choose the unzipepd folder.
 
 Open yahoo.com or sfgate.com
 
-Click on the 'M' Icon on your toolbar to open the extension and click 'Replace Ads' to see the products
+Click on the `M` Icon on your toolbar to open the extension and click `Replace Ads` to see the products
